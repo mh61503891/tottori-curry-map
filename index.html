@@ -14,12 +14,20 @@
     </script>
     <h1>鳥取のカレーマップ</h1>
     <div class="mermaid">
-      graph TD;
-      type-yakuzen((薬膳));
-      type-karaage((からあげ));
-      type-yakuzen-->木の香り;
-      type-yakuzen-->薬膳カレーSPOON;
-      type-karaage-->薬膳カレーSPOON;
+graph LR;
+  type-yakuzen((薬膳))
+  type-karaage((からあげ))
+  type-wafu((和風))
+  type-sarasara((さらさら))
+  type-kotteri((こってり))
+  type-fukuzatsumi((複雑味))
+  subgraph カレー専門店
+    shop-kinokaori[木の香り]
+    shop-spoon[薬膳カレーSPOON]
+  end
+  shop-kinokaori-->|強|type-yakuzen
+  shop-spoon-->type-yakuzen
+  shop-spoon-->type-karaage
     </div>
   </body>
 </html>
