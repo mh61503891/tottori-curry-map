@@ -1,1 +1,25 @@
-
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <title>Marked in the browser</title>
+  </head>
+  <body>
+    <div id="content"></div>
+    <script src="https://unpkg.com/mermaid/dist/mermaid.min.js"></script>
+    <script>
+      mermaid.initialize({
+        startOnLoad: true
+      });
+    </script>
+    <h1>鳥取のカレー</h1>
+    <div class="mermaid">
+      graph TD;
+      type-yakuzen((薬膳));
+      type-karaage((からあげ));
+      type-yakuzen-->木の香り;
+      type-yakuzen-->薬膳カレーSPOON;
+      type-karaage-->薬膳カレーSPOON;
+    </div>
+  </body>
+</html>
